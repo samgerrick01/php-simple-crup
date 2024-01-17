@@ -97,6 +97,7 @@ include "db_conn.php";
 
         ?>
           <tr>
+
             <td><?php echo $allMembers ?></td>
             <td><?php echo $row["title"] ?></td>
             <td><?php echo $row["department"] ?></td>
@@ -109,8 +110,14 @@ include "db_conn.php";
         <?php
         }
         ?>
+
       </tbody>
     </table>
+    <?php $isEmpty = ($result->num_rows == 0) ? true : false;
+
+    if ($isEmpty) {
+      echo '<div style="display:flex; justify-content:center; font-weight:500; font-size:x-large;">No Data!</div>';
+    } ?>
   </div>
 
   <!-- Bootstrap -->
