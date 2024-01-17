@@ -11,7 +11,7 @@ if (isset($_POST["submit"])) {
   $department = $_POST['department'];
   $year = $_POST['year'];
 
-  $sql = "UPDATE `members` SET `leader`='$leader',`member1`='$member1',`member2`='$member2',`member3`='$member3',`title`='$title',`department`='$department',`year`='$year' WHERE id = $id";
+  $sql = "UPDATE `tbl_list` SET `leader`='$leader',`member1`='$member1',`member2`='$member2',`member3`='$member3',`title`='$title',`department`='$department',`year`='$year' WHERE id = $id";
 
   $result = mysqli_query($conn, $sql);
 
@@ -56,7 +56,7 @@ if (isset($_POST["submit"])) {
     </div>
 
     <?php
-    $sql = "SELECT * FROM `members` WHERE id = $id LIMIT 1";
+    $sql = "SELECT * FROM `tbl_list` WHERE id = $id LIMIT 1";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);
     ?>

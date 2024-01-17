@@ -10,7 +10,7 @@ if (isset($_POST["submit"])) {
     $department = $_POST['department'];
     $year = $_POST['year'];
 
-    $sql = "INSERT INTO `members`(`id`, `leader`, `member1`, `member2`, `member3`, `title`, `department`, `year`) VALUES (NULL,'$leader','$member1','$member2','$member3','$title','$department','$year')";
+    $sql = "INSERT INTO `tbl_list`(`id`, `leader`, `member1`, `member2`, `member3`, `title`, `department`, `year`) VALUES (NULL,'$leader','$member1','$member2','$member3','$title','$department','$year')";
 
     $result = mysqli_query($conn, $sql);
 

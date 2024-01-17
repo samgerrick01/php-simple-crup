@@ -88,7 +88,7 @@ include "db_conn.php";
       </thead>
       <tbody>
         <?php
-        $sql = "SELECT * FROM `members`";
+        $sql = "SELECT * FROM `tbl_list`";
         $result = mysqli_query($conn, $sql);
 
         while ($row = mysqli_fetch_assoc($result)) {
