@@ -2,6 +2,8 @@
 
 ### \***\*Creating the Database Table\*\***
 
+Create DataBase name db_web
+
 ```sql
 CREATE TABLE `tbl_list` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
